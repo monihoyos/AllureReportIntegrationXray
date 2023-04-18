@@ -23,7 +23,7 @@ public class BaseTest {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--window-size=1920,1080");
         options.addArguments("--start-maximized");
-        //options.addArguments("--headless");
+        options.addArguments("--headless");
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         buscadorPage = new BuscadorPage(driver);
