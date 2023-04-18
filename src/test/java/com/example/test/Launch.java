@@ -24,7 +24,7 @@ public class Launch extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Description("Realizar una búsqueda con resultados")
     @Story("Busqueda")
-    @TmsLink("XRPRJ-1")
+    @TmsLink("TNP-26")
     public void test_busqueda_con_datos () throws Exception {
         buscadorPage.gotoBuscador(getProperties().getProperty("url"))
                     .searchText(getProperties().getProperty("textobusqueda1"))
@@ -35,7 +35,7 @@ public class Launch extends BaseTest {
     @Severity(SeverityLevel.CRITICAL)
     @Description("Realizar una búsqueda sin resultados")
     @Story("Busqueda")
-    @TmsLink("XRPRJ-3")
+    @TmsLink("TNP-27")
     public void test_busqueda_sin_datos () throws Exception {
         buscadorPage.gotoBuscador(getProperties().getProperty("url"))
                      .searchText(getProperties().getProperty("textobusqueda2"))
