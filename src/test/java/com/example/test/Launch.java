@@ -25,6 +25,7 @@ public class Launch extends BaseTest {
     @Description("Realizar una búsqueda con resultados")
     @Story("Busqueda")
     @TmsLink("https://automationtestingfs.atlassian.net/browse/TNP-26")
+    @Issue("TNP-123")
     public void test_busqueda_con_datos () throws Exception {
         buscadorPage.gotoBuscador(getProperties().getProperty("url"))
                     .searchText(getProperties().getProperty("textobusqueda1"))
